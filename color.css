@@ -1,0 +1,89 @@
+/*##########################################################
+
+sections
+
+ ##########################################################*/
+
+section .wrapper {
+    
+    border: solid blue;
+    
+}
+footer {
+    background-color: #000;
+}
+
+/*##########################################################
+
+ID`s
+
+ ##########################################################*/
+ #one {
+    background-color: aqua;
+}
+
+#two {
+    background-color: magenta;
+}
+
+#three {
+    background-color: yellow;
+}
+
+#four {
+    background-color: grey;
+}
+
+/*##########################################################
+
+navbar
+
+ ##########################################################*/
+
+ .navbar {
+    background-color: #000;    
+}
+
+.navbar ul {
+    background-color: #000;
+}
+
+.navbar li a {
+    border-left: 1px solid #555;
+}
+
+.navbar li a:hover,
+.navbar .menu-btn:hover {
+    background-color: #555;
+}
+
+
+/*##########################################################
+
+menu icon
+
+ ##########################################################*/
+
+.navbar .menu-icon .navicon {
+    background: #ccc;    
+}
+
+.navbar .menu-icon .navicon:before,
+.navbar .menu-icon .navicon:after {
+    background: #ccc;    
+}
+
+
+
+/*##########################################################
+
+elements
+
+ ##########################################################*/
+a {
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+}

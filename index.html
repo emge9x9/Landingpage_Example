@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="color.css">
-    <link rel="stylesheet" media="(min-width: 801px)" href="widescreen.css">
-    <link rel="stylesheet" media="(max-width: 800px)" href="smallscreen.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" media="(min-width: 801px)" href="css/widescreen.css">
+    <link rel="stylesheet" media="(max-width: 800px)" href="css/smallscreen.css">
     <link rel="stylesheet" href="color.css">
     <script src="script.js"></script>
     <title>Document</title>
@@ -17,63 +17,267 @@
 <body>
     <header>
         <div class="navbar">
-        <a href="#" class="logo">CSS-NAVBAR</a>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <nav>
-            <ul class="menu">
-                <li><a href="#one">section 1</a></li>
-                <li><a href="#two">section 2</a></li>
-                <li><a href="#three">section 3</a></li>
-                <li><a href="#four">section 4</a></li>
-            </ul>
-        </nav>
+            <a href="#" class="logo">Logo</a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#one">Link 1</a></li>
+                    <li><a href="#two1">Link 2</a></li>
+                    <li><a href="#three1">Link 3</a></li>
+                    <li><a href="#four">Link 4</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="overlay">
+            <h1>Header</h1>
+            <h2>Hello world!</h2>
         </div>
     </header>
-    <section id="one">
-        <div class="wrapper">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita obcaecati totam similique
-            aperiam facilis nesciunt animi ad aspernatur at, beatae consectetur ut non accusantium aut? Minus qui cum
-            maiores officia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aut recusandae incidunt
-            minima in et nemo! Aliquam ad, quaerat repudiandae ipsa et tempora molestias soluta natus, consequuntur
-            inventore sunt id?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum laboriosam ut repellendus
-            culpa harum, expedita repudiandae nostrum odio! Explicabo, illo. Temporibus unde assumenda consectetur
-            repudiandae nesciunt alias, quaerat suscipit
-        </div>
-    </section>
-    <section id="two">
-        <div class="wrapper">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita obcaecati totam similique
-            aperiam facilis nesciunt animi ad aspernatur at, beatae consectetur ut non accusantium aut? Minus qui cum
-            maiores officia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aut recusandae incidunt
-            minima in et nemo! Aliquam ad, quaerat repudiandae ipsa et tempora molestias soluta natus, consequuntur
-            inventore sunt id?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum laboriosam ut repellendus
-            culpa harum, expedita repudiandae nostrum odio! Explicabo, illo. Temporibus unde assumenda consectetur
-            repudiandae nesciunt alias, quaerat suscipit
-        </div>
-    </section>
-    <section id="three">
-        <div class="wrapper">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita obcaecati totam similique
-            aperiam facilis nesciunt animi ad aspernatur at, beatae consectetur ut non accusantium aut? Minus qui cum
-            maiores officia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aut recusandae incidunt
-            minima in et nemo! Aliquam ad, quaerat repudiandae ipsa et tempora molestias soluta natus, consequuntur
-            inventore sunt id?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum laboriosam ut repellendus
-            culpa harum, expedita repudiandae nostrum odio! Explicabo, illo. Temporibus unde assumenda consectetur
-            repudiandae nesciunt alias, quaerat suscipit
-        </div>
-    </section>
-    <section id="four">
-        <div class="wrapper">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita obcaecati totam similique
-            aperiam facilis nesciunt animi ad aspernatur at, beatae consectetur ut non accusantium aut? Minus qui cum
-            maiores officia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aut recusandae incidunt
-            minima in et nemo! Aliquam ad, quaerat repudiandae ipsa et tempora molestias soluta natus, consequuntur
-            inventore sunt id?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum laboriosam ut repellendus
-            culpa harum, expedita repudiandae nostrum odio! Explicabo, illo. Temporibus unde assumenda consectetur
-            repudiandae nesciunt alias, quaerat suscipit
-        </div>
-    </section>
-    <footer>
+
+    <section class="bg-dark" id="one">
         <div class="wrapper">
-            <a href="#">Impressum</a> <a href="#">Datenschutz</a>
+            <div class="headline">
+                <h2>Headline1</h2>
+            </div>
+            <div class="row txt-jus">                
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita obcaecati totam similique
+                        aperiam facilis nesciunt animi ad aspernatur at, beatae consectetur ut non accusantium aut?
+                        Minus
+                        qui
+                        cum
+                        maiores officia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aut
+                        recusandae
+                        incidunt
+                        minima in et nemo! Aliquam ad, quaerat repudiandae ipsa et tempora molestias soluta natus,
+                        consequuntur
+                        inventore sunt id?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum laboriosam ut
+                        repellendus
+                        culpa harum, expedita repudiandae nostrum odio! Explicabo, illo. Temporibus unde assumenda
+                        consectetur
+                        repudiandae nesciunt alias, quaerat suscipit
+                    </p>
+                </div>
+            </div>
         </div>
+        </div>
+    </section>
+
+    <section class="bg-light" id="two1">
+        <div class="wrapper">
+            <div class="headline">
+                <h2>Headline2</h2>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light" id="two2">
+        <div class="wrapper">
+            <div class="row txt-jus">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita obcaecati totam similique
+                        aperiam facilis nesciunt animi ad aspernatur at, beatae consectetur ut non accusantium aut?
+                        Minus
+                        qui
+                        cum
+                        maiores officia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aut
+                        recusandae
+                        incidunt
+                        minima in et nemo! Aliquam ad, quaerat repudiandae ipsa et tempora molestias soluta natus,
+                        consequuntur
+                        inventore sunt id?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum laboriosam ut
+                        repellendus
+                        culpa harum, expedita repudiandae nostrum odio! Explicabo, illo. Temporibus unde assumenda
+                        consectetur
+                        repudiandae nesciunt alias, quaerat suscipit
+                    </p>
+                </div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita obcaecati totam similique
+                        aperiam facilis nesciunt animi ad aspernatur at, beatae consectetur ut non accusantium aut?
+                        Minus
+                        qui
+                        cum
+                        maiores officia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aut
+                        recusandae
+                        incidunt
+                        minima in et nemo! Aliquam ad, quaerat repudiandae ipsa et tempora molestias soluta natus,
+                        consequuntur
+                        inventore sunt id?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum laboriosam ut
+                        repellendus
+                        culpa harum, expedita repudiandae nostrum odio! Explicabo, illo. Temporibus unde assumenda
+                        consectetur
+                        repudiandae nesciunt alias, quaerat suscipit
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark" id="three1">
+        <div class="wrapper">
+            <div class="headline">
+                <h2>Headline3</h2>
+            </div>
+        </div>
+    </section>
+    <section class="bg-dark" id="three2">
+        <div class="wrapper">
+            <div class="row txt-jus">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita obcaecati totam similique
+                        aperiam facilis nesciunt animi ad aspernatur at, beatae consectetur ut non accusantium aut?
+                        Minus
+                        qui
+                        cum
+                        maiores officia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aut
+                        recusandae
+                        incidunt
+                        minima in et nemo! Aliquam ad, quaerat repudiandae ipsa et tempora molestias soluta natus,
+                        consequuntur
+                        inventore sunt id?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum laboriosam ut
+                        repellendus
+                        culpa harum, expedita repudiandae nostrum odio! Explicabo, illo. Temporibus unde assumenda
+                        consectetur
+                        repudiandae nesciunt alias, quaerat suscipit
+                    </p>
+                </div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita obcaecati totam similique
+                        aperiam facilis nesciunt animi ad aspernatur at, beatae consectetur ut non accusantium aut?
+                        Minus
+                        qui
+                        cum
+                        maiores officia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aut
+                        recusandae
+                        incidunt
+                        minima in et nemo! Aliquam ad, quaerat repudiandae ipsa et tempora molestias soluta natus,
+                        consequuntur
+                        inventore sunt id?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum laboriosam ut
+                        repellendus
+                        culpa harum, expedita repudiandae nostrum odio! Explicabo, illo. Temporibus unde assumenda
+                        consectetur
+                        repudiandae nesciunt alias, quaerat suscipit
+                    </p>
+                </div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita obcaecati totam similique
+                        aperiam facilis nesciunt animi ad aspernatur at, beatae consectetur ut non accusantium aut?
+                        Minus
+                        qui
+                        cum
+                        maiores officia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aut
+                        recusandae
+                        incidunt
+                        minima in et nemo! Aliquam ad, quaerat repudiandae ipsa et tempora molestias soluta natus,
+                        consequuntur
+                        inventore sunt id?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum laboriosam ut
+                        repellendus
+                        culpa harum, expedita repudiandae nostrum odio! Explicabo, illo. Temporibus unde assumenda
+                        consectetur
+                        repudiandae nesciunt alias, quaerat suscipit
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light" id="four">
+        <div class="wrapper">
+            <div class="headline">
+                <h2>Headline4</h2>
+            </div>
+            <div class="row txt-jus">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita obcaecati totam similique
+                        aperiam facilis nesciunt animi ad aspernatur at, beatae consectetur ut non accusantium aut?
+                        Minus
+                        qui
+                        cum
+                        maiores officia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aut
+                        recusandae
+                        incidunt
+                        minima in et nemo! Aliquam ad, quaerat repudiandae ipsa et tempora molestias soluta natus,
+                        consequuntur
+                        inventore sunt id?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum laboriosam ut
+                        repellendus
+                        culpa harum, expedita repudiandae nostrum odio! Explicabo, illo. Temporibus unde assumenda
+                        consectetur
+                        repudiandae nesciunt alias, quaerat suscipit
+                    </p>
+                </div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita obcaecati totam similique
+                        aperiam facilis nesciunt animi ad aspernatur at, beatae consectetur ut non accusantium aut?
+                        Minus
+                        qui
+                        cum
+                        maiores officia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aut
+                        recusandae
+                        incidunt
+                        minima in et nemo! Aliquam ad, quaerat repudiandae ipsa et tempora molestias soluta natus,
+                        consequuntur
+                        inventore sunt id?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum laboriosam ut
+                        repellendus
+                        culpa harum, expedita repudiandae nostrum odio! Explicabo, illo. Temporibus unde assumenda
+                        consectetur
+                        repudiandae nesciunt alias, quaerat suscipit
+                    </p>
+                </div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita obcaecati totam similique
+                        aperiam facilis nesciunt animi ad aspernatur at, beatae consectetur ut non accusantium aut?
+                        Minus
+                        qui
+                        cum
+                        maiores officia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aut
+                        recusandae
+                        incidunt
+                        minima in et nemo! Aliquam ad, quaerat repudiandae ipsa et tempora molestias soluta natus,
+                        consequuntur
+                        inventore sunt id?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum laboriosam ut
+                        repellendus
+                        culpa harum, expedita repudiandae nostrum odio! Explicabo, illo. Temporibus unde assumenda
+                        consectetur
+                        repudiandae nesciunt alias, quaerat suscipit
+                    </p>
+                </div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita obcaecati totam similique
+                        aperiam facilis nesciunt animi ad aspernatur at, beatae consectetur ut non accusantium aut?
+                        Minus
+                        qui
+                        cum
+                        maiores officia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aut
+                        recusandae
+                        incidunt
+                        minima in et nemo! Aliquam ad, quaerat repudiandae ipsa et tempora molestias soluta natus,
+                        consequuntur
+                        inventore sunt id?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum laboriosam ut
+                        repellendus
+                        culpa harum, expedita repudiandae nostrum odio! Explicabo, illo. Temporibus unde assumenda
+                        consectetur
+                        repudiandae nesciunt alias, quaerat suscipit
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark" id="five">
+        <div class="wrapper">
+            <div class="headline">
+                <h2>Footer</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="navbar">
+                <nav><a href="#">Impressum</a> | <a href="#">Datenschutz</a> | <a href="#">Quellnachweise</a></nav>
+                <p class="copyright">&copy; 2022 by me</p>
+            </div>
+        </div>
+
     </footer>
 </body>
 

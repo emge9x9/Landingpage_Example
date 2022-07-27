@@ -1,28 +1,71 @@
 /*##########################################################
 
-sections
+container
 
  ##########################################################*/
 html {
     scroll-behavior: smooth;
 }
+
 body {
     margin: 0;
     font-family: Helvetica, sans-serif;
 }
-section,
-footer {
-    display: flex;
-    justify-content: center;    
-}
-section {
+
+header {
     min-height: 100vh;
-    padding: 64px;
 }
-section .wrapper {
-    padding: 16px;
-    text-align: justify;
-    width: 60vh;
+
+.wrapper {
+    padding: 64px 16px;
+    width: 80vw;
+}
+
+header {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+header .overlay {
+    height: 100vh;
+    width: 100%;
+    padding-top: 20vh;
+}
+
+#one {
+    min-height: 100vh;
+}
+
+#one .row {
+    width: 100%;
+}
+
+#two1,
+#three1 {
+    background-attachment: fixed;
+}
+
+#two2 .row,
+#three2 .row {
+    width: 100%;    
+}
+
+#four {
+    min-height: 100vh;
+}
+
+#four .row {
+    width: 100%;
+}
+
+#four .content {
+    width: 100%;
+}
+
+footer .row {
+    width: 100%;
 }
 
 /*##########################################################
@@ -30,29 +73,27 @@ section .wrapper {
 navbar
 
  ##########################################################*/
-
- .navbar {
-    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+header .navbar {
     position: fixed;
     width: 100%;
     z-index: 3;
 }
 
-.navbar ul {
+header .navbar ul {
     margin: 0;
     padding: 0;
     list-style: none;
     overflow: hidden;
 }
 
-.navbar li a {
+header .navbar li a {
     text-align: center;
     display: block;
     padding: 20px 20px;
     text-decoration: none;
 }
 
-.navbar .logo {
+header .navbar .logo {
     display: block;
     float: left;
     font-size: 1.8em;
@@ -60,13 +101,21 @@ navbar
     text-decoration: none;
 }
 
+footer .navbar {
+    width: 100%;
+    padding: 8px 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
 /*##########################################################
 
 menu
 
  ##########################################################*/
-
-nav .menu {
+header nav .menu {
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
@@ -77,8 +126,7 @@ nav .menu {
 menu icon
 
  ##########################################################*/
-
-.navbar .menu-icon {
+header .navbar .menu-icon {
     cursor: pointer;
     float: right;
     padding: 28px 20px;
@@ -86,15 +134,15 @@ menu icon
     user-select: none;
 }
 
-.navbar .menu-icon .navicon {
+header .navbar .menu-icon .navicon {
     display: block;
     height: 2px;
     position: relative;
     width: 18px;
 }
 
-.navbar .menu-icon .navicon:before,
-.navbar .menu-icon .navicon:after {
+header .navbar .menu-icon .navicon:before,
+header .navbar .menu-icon .navicon:after {
     content: '';
     display: block;
     height: 100%;
@@ -103,11 +151,11 @@ menu icon
     width: 100%;
 }
 
-.navbar .menu-icon .navicon:before {
+header .navbar .menu-icon .navicon:before {
     top: 5px;
 }
 
-.navbar .menu-icon .navicon:after {
+header .navbar .menu-icon .navicon:after {
     top: -5px;
 }
 
@@ -116,28 +164,56 @@ menu icon
 menu button
 
  ##########################################################*/
-
-.navbar .menu-btn {
+header .navbar .menu-btn {
     display: none;
 }
 
-.navbar .menu-btn:checked~nav .menu {
+header .navbar .menu-btn:checked~nav .menu {
     max-height: 240px;
 }
 
-.navbar .menu-btn:checked~.menu-icon .navicon {
+header .navbar .menu-btn:checked~.menu-icon .navicon {
     background: transparent;
 }
 
-.navbar .menu-btn:checked~.menu-icon .navicon:before {
+header .navbar .menu-btn:checked~.menu-icon .navicon:before {
     transform: rotate(-45deg);
 }
 
-.navbar .menu-btn:checked~.menu-icon .navicon:after {
+header .navbar .menu-btn:checked~.menu-icon .navicon:after {
     transform: rotate(45deg);
 }
 
-.navbar .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
-.navbar .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+header .navbar .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+header .navbar .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
     top: 0;
+}
+
+/*##########################################################
+
+text elements
+
+ ##########################################################*/
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.txt-jus {
+    text-align: justify;
+}
+
+.txt-cen {
+    text-align: center;
+}
+
+.txt-rig {
+    text-align: right;
+}
+
+.txt-lef {
+    text-align: left;
 }

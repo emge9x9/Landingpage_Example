@@ -1,37 +1,59 @@
 /*##########################################################
 
-sections
+helplines
 
- ##########################################################*/
-
-section .wrapper {
-    
-    border: solid blue;
-    
-}
+##########################################################*/
+header,
+section,
 footer {
-    background-color: #000;
+    border: solid #ff0;
+}
+
+.wrapper {
+    border: solid #00f;
+}
+
+.row {
+    border: solid #f00;
+}
+
+.content {
+    border: solid #0f0;
 }
 
 /*##########################################################
 
-ID`s
+container
 
- ##########################################################*/
- #one {
-    background-color: aqua;
+##########################################################*/
+header {
+    background-image: linear-gradient(black, #fff);
 }
 
-#two {
-    background-color: magenta;
+header .overlay {
+    background-color: rgba(72, 120, 212, 0.3);
 }
 
-#three {
-    background-color: yellow;
+.bg-light {
+    background-color: #888;
+    color: #000;
 }
 
-#four {
-    background-color: grey;
+.bg-dark {
+    background-color: black;
+    color: #888;
+}
+
+#two1 {
+    background-image: linear-gradient(red, orange);
+}
+
+#three1 {
+    background-image: linear-gradient(blue, yellow);
+}
+
+footer .navbar {
+    border-top: solid white;
 }
 
 /*##########################################################
@@ -39,49 +61,50 @@ ID`s
 navbar
 
  ##########################################################*/
-
- .navbar {
-    background-color: #000;    
-}
-
-.navbar ul {
+header .navbar {
     background-color: #000;
+    box-shadow: 2px 2px 4px 0 rgba(80, 80, 80, .8);
 }
 
-.navbar li a {
+header .navbar ul {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+header .navbar li a {
     border-left: 1px solid #555;
 }
 
-.navbar li a:hover,
-.navbar .menu-btn:hover {
+header .navbar li a:hover,
+header .navbar .menu-btn:hover {
     background-color: #555;
 }
-
 
 /*##########################################################
 
 menu icon
 
  ##########################################################*/
-
-.navbar .menu-icon .navicon {
-    background: #ccc;    
+header .navbar .menu-icon .navicon {
+    background: #ccc;
 }
 
-.navbar .menu-icon .navicon:before,
-.navbar .menu-icon .navicon:after {
-    background: #ccc;    
+header .navbar .menu-icon .navicon:before,
+header .navbar .menu-icon .navicon:after {
+    background: #ccc;
 }
-
-
 
 /*##########################################################
 
-elements
+text elements
 
  ##########################################################*/
 a {
     color: #fff;
+}
+
+header h1,
+header h2 {
+    color: #888;
 }
 
 footer a {

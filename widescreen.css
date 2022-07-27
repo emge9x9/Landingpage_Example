@@ -1,14 +1,129 @@
 /*##########################################################
 
+container
+
+ ##########################################################*/
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+header .overlay {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+#one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#one .headline {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+#one .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#two1,
+#three1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+#two1 .headline,
+#three1 .headline {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+#two2,
+#three2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+#two2 .content,
+#three2 .content {
+    width: 30%;
+}
+
+#two2 .row,
+#three2 .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#four {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#four .headline {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+#four .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .headline {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/*##########################################################
+
 navbar
 
  ##########################################################*/
 
-.navbar li {
+header .navbar li {
     float: left;
 }
 
-.navbar li a {
+header .navbar li a {
     padding: 20px 30px;
 }
 
@@ -18,7 +133,7 @@ menu
 
  ##########################################################*/
 
-nav .menu {
+header nav .menu {
     clear: none;
     float: right;
     max-height: none;
@@ -30,6 +145,6 @@ menu icon
 
  ##########################################################*/
 
-.navbar .menu-icon {
+header .navbar .menu-icon {
     display: none;
 }

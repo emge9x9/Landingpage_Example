@@ -107,3 +107,10 @@ footer .row {
    justify-content: space-around;
    align-items: center;
 }
+
+footer nav {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
